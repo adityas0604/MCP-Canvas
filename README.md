@@ -59,7 +59,7 @@ pip install -r requirements.txt
 2. Go to **Account → Settings**
 3. Scroll to **Approved Integrations**
 4. Click **New Access Token**
-5. Copy the token into your `.env`
+5. Copy and save this token.
 
 ### 3. Configure Claude Desktop
 
