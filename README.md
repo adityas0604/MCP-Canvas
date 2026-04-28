@@ -45,24 +45,13 @@ A robust **Model Context Protocol (MCP) server** that connects Claude AI to your
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/yourusername/canvas-mcp.git
+git clone https://github.com/adityas0604/MCP-Canvas.git
 cd canvas-mcp
 ```
 
 ### 2. Install dependencies
 ```bash
 pip install -r requirements.txt
-```
-
-### 3. Configure your Canvas credentials
-```bash
-cp .env.example .env
-```
-
-Edit `.env`:
-```env
-CANVAS_BASE_URL=https://yourschool.instructure.com
-CANVAS_API_TOKEN=your_token_here
 ```
 
 **How to get your Canvas API Token:**
@@ -72,7 +61,7 @@ CANVAS_API_TOKEN=your_token_here
 4. Click **New Access Token**
 5. Copy the token into your `.env`
 
-### 4. Configure Claude Desktop
+### 3. Configure Claude Desktop
 
 Add this to your `claude_desktop_config.json`:
 
@@ -94,7 +83,7 @@ Add this to your `claude_desktop_config.json`:
 }
 ```
 
-### 5. Restart Claude Desktop
+### 4. Restart Claude Desktop
 
 The Canvas tools will now appear in your Claude sidebar!
 
@@ -110,24 +99,6 @@ Once connected, try asking Claude:
 - *"What announcements have my professors posted recently?"*
 - *"Show me my grade breakdown for course 12345"*
 - *"What does my week look like?"*
-
----
-
-## 🗂️ Project Structure
-
-```
-canvas-mcp/
-├── server.py           # MCP server entry point (14 tools)
-├── canvas_client.py    # Canvas REST API wrapper with pagination
-├── tools/
-│   ├── assignments.py  # Assignment & course tools
-│   ├── grades.py       # Grade tools
-│   ├── announcements.py# Announcement & module tools
-│   └── calendar.py     # Calendar tools
-├── .env.example        # Environment config template
-├── requirements.txt
-└── README.md
-```
 
 ---
 
